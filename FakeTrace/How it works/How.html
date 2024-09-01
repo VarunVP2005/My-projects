@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FakeTrace</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../img/icon.png">
+    <link
+      rel="stylesheet"
+      href="../How it works/Hstyle.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Custom CSS for fixed navbar */
+      .navbar-fixed {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1030; /* Ensure it is above other content */
+      }
+
+      /* Custom styles for the first navbar */
+      .navbar-fixed .navbar-nav .nav-link {
+        font-size: 18px; /* Adjust font size */
+        font-weight: 600; /* Adjust font weight */
+      }
+
+      /* To prevent content from being hidden under the fixed navbar */
+      body {
+        padding-top: 100px; /* Adjust this value based on the navbar height */
+      }
+
+      /* Adjusting the second navbar's position */
+      .second-navbar {
+        margin-top: 10px; /* Adjust this value to move it below the first navbar */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <!-- Primary Nav Bar -->
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top navbar-fixed"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand ms-2 fw-bold" href="../Home/index.html"
+            ><img
+              src="../img/logo-removebg-preview.png"
+              alt="logo"
+              width="170px"
+              height="80px"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../Home/index.html"> Home |</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../about/About.html"
+                  > About DeepFake |</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="../detection techniques/Detection Techniques.html"
+                  > Detection Techniques |</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../About us/about us.html"> About Us |</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Secondary Nav Bar -->
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top second-navbar"
+      >
+        <div class="container-fluid">
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="secondaryNavbar"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Report</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Check Your Status</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../How it works/How.html">How It Works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../F & Q/F & Q.html">FAQ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+<div class="container">
+    <section class="steps-section">
+        <p class="subheading">3 easy steps</p>
+        <h2 class="heading">How does FakeTrace work?</h2>
+        <p class="description">To use the FakeTrace, follow these simple steps:</p>
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <p class="step-title">Upload the Image:</p>
+                <ul class="step-details">
+                    <li>Navigate to the FakeTrace on our website.</li>
+                    <li>Click the 'Upload Image' button and select the image you want to analyze from your device.</li>
+                </ul>
+            </div>
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <p class="step-title">Analyze the Image:</p>
+                <ul class="step-details">
+                    <li>Once the image is uploaded, the FakeTrace will begin analyzing it. This process involves examining various attributes and patterns within the image.</li>
+                </ul>
+            </div>
+            <div class="step-card">
+                <div class="step-number">3</div>
+                <p class="step-title">Receive the Results:</p>
+                <ul class="step-details">
+                    <li>After the analysis is complete, the FakeTrace will provide you with the results, indicating whether the image is likely to be Real or DeepFake.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

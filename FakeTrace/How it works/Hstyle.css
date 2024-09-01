@@ -1,0 +1,129 @@
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    background-color: #f4f7fb;
+    color: #333;
+}
+
+/* Container Styles */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Section Styles */
+.steps-section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Text Styles */
+.subheading {
+    font-size: 14px;
+    font-weight: bold;
+    color: #276ef1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.heading {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.description {
+    font-size: 16px;
+    color: #647084;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+/* Grid Layout */
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Card Styles */
+.step-card {
+    background-color: #ffffff;
+    border: 1px solid #dfdfdf;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.step-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Step Number */
+.step-number {
+    background-color: #276ef1;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+
+/* Step Title */
+.step-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Step Details */
+.step-details {
+    list-style: none;
+    padding-left: 0;
+    font-size: 14px;
+    color: #647084;
+    line-height: 1.6;
+}
+
+.step-details li {
+    margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .heading {
+        font-size: 28px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .step-title {
+        font-size: 16px;
+    }
+
+    .step-details {
+        font-size: 13px;
+    }
+}
+          

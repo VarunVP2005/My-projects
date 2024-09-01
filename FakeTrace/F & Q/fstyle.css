@@ -1,0 +1,151 @@
+body {
+    font-family: 'Poppins', sans-serif; /* Use a fallback font */
+    font-size: 1rem; /* Default font size */
+    font-weight: 400; /* Default font weight */
+    line-height: 1.5; /* Default line height */
+    color: #212529; /* Default text color */
+    background-color: #f8f9fa; /* Default background color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Section Styles */
+main.flex-shrink-0 {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* FAQ Section */
+section.py-3 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+section.py-lg-4 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+section.py-xl-5 {
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+}
+
+section.mb-4 {
+    margin-bottom: 1rem;
+}
+
+section.mb-lg-5 {
+    margin-bottom: 1.5rem;
+}
+
+.bg-body-tertiary {
+    background-color: #e9ecef; /* Adjust color as needed */
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-lg-5, .col-lg-7 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+}
+
+.col-lg-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+}
+
+.col-lg-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+p.mb-0 {
+    margin-bottom: 0;
+}
+
+/* Accordion Styles */
+.accordion-button {
+    background-color: #f8f9fa; /* Light background color */
+    border: 1px solid #dee2e6; /* Light border color */
+    border-radius: 0.25rem; /* Default border radius */
+    color: #212529; /* Default text color */
+    font-size: 1rem; /* Default font size */
+}
+
+.accordion-button:hover {
+    background-color: #e2e6ea; /* Hover background color */
+    border-color: #ced4da; /* Hover border color */
+    color: #0d6efd; /* Hover text color */
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(38, 143, 255, 0.25); /* Focus shadow */
+}
+
+.accordion-button:not(.collapsed) {
+    color: #0d6efd; /* Active text color */
+    background-color: #e7f0ff; /* Active background color */
+    border-color: #bee5eb; /* Active border color */
+}
+
+.accordion-header {
+    margin-bottom: 0;
+}
+
+.accordion-body {
+    font-size: 1rem; /* Default font size */
+    padding: 1rem;
+    border-top: 1px solid #dee2e6; /* Border color */
+}
+
+.accordion-item {
+    border: 1px solid #dee2e6; /* Border color */
+    border-radius: 0.25rem; /* Border radius */
+    margin-bottom: 0.5rem;
+}
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+    .col-lg-5, .col-lg-7 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Additional Hover Effects */
+a:hover {
+    color: var(--bs-primary-dark);
+    text-decoration: underline;
+}
+
+.bg-body-tertiary:hover {
+    background-color: var(--bs-tertiary-bg-hover);
+}
+
+.container:hover {
+    background-color: var(--bs-light);
+}
